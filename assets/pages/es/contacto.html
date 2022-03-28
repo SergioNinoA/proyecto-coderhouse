@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <title>Enrique F. Segura | Director de orquesta</title>
+</head>
+<body>
+<header>
+    <div id="header__cont">
+        <h1 class="header__title">Enrique Francisco Segura</h1>
+        <h2 class="header__subtitle">Director de Orquesta</h2>
+    </div>    
+    <nav>
+        <ul>
+            <li><a href="../../../index.html">Inicio</a></li>
+            <li><a href="bio.html">Biografía</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <img class="background" src="../../img/efs-5.webp" alt="">
+        <h3 class="contact__title">Contacto</h3>
+        <form id="form" class="contact__form">
+            <input type="text" id="name" name="name" class="contact__form-input" placeholder="* Nombre y Apellido..." required>
+            <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="* Asunto" required>
+            <input type="submit" id="button" class="contact__form-input" value=" Enviar ">
+            <input type="email" id="email" name="email" class="contact__form-input" placeholder="* Correo electrónico" required>
+            <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input" placeholder="* Escriba aquí su mensaje..." 
+                required></textarea>
+            <input type="tel" id="tel" name="tel" class="contact__form-input" placeholder="Teléfono">
+            <input type="text" id="city" name="city" class="contact__form-input" placeholder="Ciudad">
+            <p class="request">(*)<span class="italic"> Campos requeridos</span></p>
+        </form>        
+    </main>
+    <footer>
+        <p>©2022 Enrique Francisco Segura - All Rights Reserved.</p>
+        <p>Created by Sergio N. Niño A.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('user_6BpMPVWHiAU6IgAd566TO')
+    </script>
+    <script>
+        const btn = document.getElementById('button');
+        const name = document.getElementById('name')
+        const email = document.getElementById('email')
+        const tel = document.getElementById('tel')
+        const city = document.getElementById('city')
+        const subject = document.getElementById('subject')
+        const message = document.getElementById('message')
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_22sit0n';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = ' Enviar ';
+                        alert('Gracias por su consulta!');
+                        name.value = ''
+                        email.value = ''
+                        tel.value = ''
+                        city.value = ''
+                        subject.value = ''
+                        message.value = ''
+                    }, (err) => {
+                        btn.value = ' Enviar ';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
+</body>
+
+</html>

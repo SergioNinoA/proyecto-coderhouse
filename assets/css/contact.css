@@ -1,0 +1,96 @@
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(41,41,41,0);
+    justify-items: center;
+    align-content: start;
+}
+.background{
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+    z-index: -50;
+    position: absolute;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;    
+}
+.contact__title{
+    font-family: 'Vollkorn', serif;
+    color: orange;
+    text-align: center;
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    font-size: 36px;
+}
+.contact__form{
+    box-sizing: border-box;
+    display: grid;
+    position: absolute;
+    grid-row-start: 2;
+    align-self: flex-start;    
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    min-width: 270px;
+    max-width: 700px;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    padding: 0 10px /*35%*/
+}
+.contact__form-input:nth-child(1){
+    grid-column-start: span 2;
+}
+.contact__form-input:nth-child(2){
+    grid-column-start: span 2;
+}
+.contact__form-input:nth-child(4){
+    grid-column-start: span 2;
+}
+.contact__form-input:nth-child(5){
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+}
+.contact__form-input:nth-child(6){
+    grid-column-start: span 2;
+}
+.contact__form-input:nth-child(7){
+    grid-column-start: span 2;
+}
+.contact__form-input{
+    text-align: center;
+    justify-content: center;
+    object-fit: cover;
+}
+input{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+textarea{    
+    width: 100%;
+    padding-top: 10%; 
+    transition: all 0.5s linear;
+}
+input:focus{
+    background-color: rgb(251, 224, 172);     
+    
+}
+textarea:focus{
+    background-color: rgb(251, 224, 172);    
+}
+.request{    
+    font-family: 'Vollkorn';
+    color: orange;
+    background-color: rgba(41,41,41);
+    grid-column-start: span 5;
+    text-align: center;
+}
+@media screen and (max-width: 300px){
+    input{
+        font-size: 65%;        
+    }
+}
