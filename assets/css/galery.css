@@ -15,12 +15,13 @@
     padding-left: 5%;
     padding-right: 5%;
     row-gap: 1%;
-    column-gap: 1%;
+    column-gap: 1%;    
 }
 .img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 600px;
 }
 .item:nth-child(1){
     grid-column-start: span 2;
