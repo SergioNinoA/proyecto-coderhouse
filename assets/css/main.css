@@ -19,10 +19,10 @@
 a {
   /* aún hay que revisar el color que se va a aplicar */
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   transition: all 0.5s linear; }
   a:hover {
-    color: orange; }
+    color: darkorange; }
 
 .italic {
   font-style: italic; }
@@ -38,7 +38,7 @@ a {
 
 header {
   color: white;
-  background: black;
+  background: #292929;
   background: linear-gradient(180deg, black 0%, #292929 85%);
   text-align: center;
   position: fixed;
@@ -56,7 +56,7 @@ header {
 
 .header__title {
   font-size: 32px;
-  color: #FF8A00;
+  color: darkorange;
   padding-top: 2%; }
 
 .header__subtitle {
@@ -89,7 +89,7 @@ footer {
   position: relative;
   font-family: 'Vollkorn';
   color: white;
-  background: black;
+  background: #292929;
   background: linear-gradient(0deg, black 0%, #292929 95%);
   text-align: center;
   padding: 2em;
@@ -163,3 +163,55 @@ footer {
   .index__par {
     font-size: 20px;
     padding: 5%; } }
+
+.bio__title {
+  font-family: 'Vollkorn', serif;
+  color: orange;
+  text-align: center;
+  margin: 20px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-size: 36px; }
+
+.bio__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.bio__image {
+  width: 35%;
+  padding: 1%;
+  box-sizing: border-box;
+  min-width: 270px; }
+
+.bio__par {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+  line-height: 1.5;
+  min-width: 270px; }
+  .bio__par-p {
+    margin-bottom: 15px; }
+
+@media screen and (max-width: 539px) {
+  .bio__image {
+    width: 85%; }
+  .bio__par {
+    width: 85%;
+    padding-top: 10%; } }
+
+@media screen and (width: 540px) {
+  .bio__image {
+    width: 86%; }
+  .bio__par {
+    width: 85%;
+    padding-top: 10%; } }
+
+@media screen and (max-width: 290px) {
+  .bio__image {
+    min-width: 240px; }
+  .bio__par {
+    min-width: 240px; } }

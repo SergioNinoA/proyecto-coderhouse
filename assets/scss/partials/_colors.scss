@@ -1,0 +1,16 @@
+$colors: (
+    color1: orange,
+    color2: black,
+    color3: rgb(41,41,41),
+    color4: white, 
+    color5: rgb(255, 140, 0),
+);
+
+$m-colors: (
+    title: map-get($colors, color5),
+    s-title: map-get($map: $colors, $key: color1),
+    text: map-get($map: $colors, $key: color4),
+    background: map-get($map: $colors, $key: color3),
+    gradient: map-get($map: $colors, $key: color2),
+    focus: lighten(map-get($map: $colors, $key: color1), 30%),
+)

@@ -1,0 +1,46 @@
+header{
+    color: map-get($map: $m-colors, $key: text);
+    background: map-get($map: $m-colors, $key: background);
+    background: linear-gradient(180deg,  map-get($map: $m-colors, $key: gradient) 0%, map-get($map: $m-colors, $key: background) 85%);
+    text-align: center;
+    position: fixed;
+    z-index: 901;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 85%;
+    box-sizing: border-box;
+    block-size: 170px;
+}
+
+#header__cont{
+    padding: 10px;
+    font-family: 'Vollkorn';
+}
+
+.header{
+    &__title{
+        font-size: 32px;
+        color: map-get($map: $m-colors, $key: title);
+        padding-top: 2%;
+    }
+    &__subtitle{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+nav{
+    font-family: 'Vollkorn';
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    padding-left: 1%;
+    padding-right: 1%;
+}

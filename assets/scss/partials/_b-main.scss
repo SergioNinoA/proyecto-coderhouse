@@ -1,0 +1,11 @@
+
+main{
+    position: relative;
+    margin-top: 170px;
+    padding-top: 2%;
+    background-color: map-get($map: $m-colors, $key: background);
+    background-size: contain;
+    color: map-get($map: $m-colors, $key: text);
+    padding-bottom: 3em;
+    min-height:80vh;
+}

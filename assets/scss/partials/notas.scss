@@ -1,0 +1,22 @@
+$colors: (
+    color1: orange,
+);
+
+.etiquetas{
+    color: darken($color, 20%);
+    color: lighten($color, 30%);
+    color: rgba($color, 0.9); /* n=<1 para poner un color con transparencia, donde 1 es el máximo */
+    color: mix($color, $color2)
+}
+
+
+/*Creando un mixin que me permite agregar argumentos*/
+@mixin variable($display, $horizontal, $vertical){
+    display: $display;
+    justify-content: $horizontal;
+    aling-items: $vertical;
+}
+
+.container500{ /*acá llamo las propiedades de "variable" y defino cada uno de los argumentos*/
+    @include variable(flex, center, flex-end)
+}

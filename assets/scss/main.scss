@@ -1,6 +1,15 @@
+//Colors
+@import "partials/colors.scss";
+
 // Layout
-@import "stylesheets/style.scss";
+@import "partials/style.scss";
+@import "partials/header.scss";
+@import "partials/b-main.scss";
+@import "partials/footer.scss";
 
 //index
-@import "stylesheets/index.scss";
+@import "partials/index.scss";
+
+//bio
+@import "partials/bio.scss";
 
