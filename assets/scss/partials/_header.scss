@@ -12,22 +12,23 @@ header{
     box-sizing: border-box;
     block-size: 170px;
 }
-
-#header__cont{
-    padding: 10px;
-    font-family: 'Vollkorn';
-}
-
 .header{
     &__title{
         font-size: 32px;
         color: map-get($map: $m-colors, $key: title);
         padding-top: 2%;
+        font-family: 'Vollkorn';
     }
     &__subtitle{
         font-size: 24px;
         margin-bottom: 10px;
+        font-family: 'Vollkorn';
     }
+}
+
+#header__cont{
+    padding: 10px;
+    font-family: 'Vollkorn';
 }
 
 nav{
@@ -36,7 +37,7 @@ nav{
 }
 
 ul{
-    list-style: none;
+    list-style: none;    
 }
 
 li{

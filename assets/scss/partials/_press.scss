@@ -1,12 +1,11 @@
-.video__title{
+.press{
+    &__title{
     font-family: 'Vollkorn', serif;
-    color: orange;
+    color: map-get($map: $m-colors, $key: title);
     text-align: center;
     margin: 20px;
     padding-top: 50px;
     box-sizing: border-box;
     font-size: 36px;
-}
-.video__container{
-    box-sizing: border-box
+    }
 }
