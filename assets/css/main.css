@@ -39,47 +39,80 @@ a {
 header {
   color: white;
   background: #292929;
-  background: linear-gradient(180deg, black 0%, #292929 85%);
+  background: linear-gradient(180deg, black 95%, #292929 100%);
   text-align: center;
   position: fixed;
   z-index: 901;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 85%;
   box-sizing: border-box;
-  block-size: 170px; }
+  block-size: 130px; }
 
 .header__title {
-  font-size: 32px;
+  font-size: calc(1rem + 1vw);
   color: darkorange;
   padding-top: 2%;
   font-family: 'Vollkorn'; }
 
 .header__subtitle {
-  font-size: 24px;
+  font-size: calc(0.9rem + 1vw);
   margin-bottom: 10px;
   font-family: 'Vollkorn'; }
 
 #header__cont {
-  padding: 10px;
+  padding: 10px 0 10px 5%;
   font-family: 'Vollkorn'; }
 
 nav {
   font-family: 'Vollkorn';
-  text-align: center; }
+  align-items: center; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  font-size: calc(1rem + 0.2vw); }
 
-li {
+.li {
   display: inline-block;
   padding-left: 1%;
   padding-right: 1%; }
 
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: darkorange; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
+@media screen and (max-width: 350px) {
+  .header__title {
+    font-size: calc(0.9rem + 1vw);
+    color: darkorange;
+    padding-top: 2%;
+    font-family: 'Vollkorn'; }
+  .header__subtitle {
+    font-size: calc(0.9rem + 1vw);
+    margin-bottom: 10px;
+    font-family: 'Vollkorn'; }
+  .navbar-toggler {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out; } }
+
+@media screen and (min-width: 1000px) {
+  header {
+    block-size: 150px; } }
+
+@media screen and (min-width: 500px) {
+  #header__cont {
+    padding: 10px 0 10px 10%; } }
+
 main {
   position: relative;
-  margin-top: 170px;
+  margin-top: 120px;
   padding-top: 2%;
   background-color: #292929;
   background-size: contain;
@@ -92,7 +125,7 @@ footer {
   font-family: 'Vollkorn';
   color: white;
   background: #292929;
-  background: linear-gradient(0deg, black 0%, #292929 95%);
+  background: linear-gradient(0deg, black 30%, #292929 95%);
   text-align: center;
   padding: 2em;
   left: 0;
@@ -328,7 +361,8 @@ textarea {
   padding-left: 5%;
   padding-right: 5%;
   row-gap: 1%;
-  column-gap: 1%; }
+  column-gap: 1%;
+  aspect-ratio: none; }
 
 .galery__img {
   width: 100%;

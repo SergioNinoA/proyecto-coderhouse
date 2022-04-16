@@ -4,7 +4,7 @@ footer{
     font-family: 'Vollkorn';
     color: map-get($map: $m-colors, $key: text);
     background: map-get($map: $m-colors, $key: background);
-    background: linear-gradient(0deg, map-get($map: $m-colors, $key: gradient) 0%, map-get($map: $m-colors, $key: background) 95%);
+    background: linear-gradient(0deg, map-get($map: $m-colors, $key: gradient) 30%, map-get($map: $m-colors, $key: background) 95%);
     text-align: center;
     padding: 2em;
     left: 0;

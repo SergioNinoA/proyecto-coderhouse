@@ -1,47 +1,89 @@
 header{
     color: map-get($map: $m-colors, $key: text);
     background: map-get($map: $m-colors, $key: background);
-    background: linear-gradient(180deg,  map-get($map: $m-colors, $key: gradient) 0%, map-get($map: $m-colors, $key: background) 85%);
+    background: linear-gradient(180deg,  map-get($map: $m-colors, $key: gradient) 95%, map-get($map: $m-colors, $key: background) 100%);
     text-align: center;
     position: fixed;
     z-index: 901;
     top: 0;
     right: 0;
-    left: 0;
-    bottom: 85%;
+    left: 0;    
     box-sizing: border-box;
-    block-size: 170px;
+    block-size: 130px;
 }
 .header{
     &__title{
-        font-size: 32px;
+        font-size: calc(1rem + 1vw);
         color: map-get($map: $m-colors, $key: title);
         padding-top: 2%;
-        font-family: 'Vollkorn';
+        font-family: 'Vollkorn';        
     }
     &__subtitle{
-        font-size: 24px;
+        font-size: calc(0.9rem + 1vw);
         margin-bottom: 10px;
         font-family: 'Vollkorn';
     }
 }
 
 #header__cont{
-    padding: 10px;
+    padding: 10px 0 10px 5%;
     font-family: 'Vollkorn';
 }
-
 nav{
     font-family: 'Vollkorn';
-    text-align: center;
+    align-items: center;    
+    
 }
 
 ul{
     list-style: none;    
+    font-size: calc(1rem + 0.2vw);
 }
 
-li{
+.li{
     display: inline-block;
     padding-left: 1%;
     padding-right: 1%;
+    
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: map-get($map: $m-colors, $key: title);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: map-get($map: $m-colors, $key: text);
+}
+@media screen and (max-width: 350px){
+    .header{
+        &__title{
+            font-size: calc(0.9rem + 1vw);
+            color: map-get($map: $m-colors, $key: title);
+            padding-top: 2%;
+            font-family: 'Vollkorn';        
+        }
+        &__subtitle{
+            font-size: calc(0.9rem + 1vw);;
+            margin-bottom: 10px;
+            font-family: 'Vollkorn';
+        }
+    }
+    .navbar-toggler {
+        padding: 0.2rem 0.3rem;
+        font-size: 0.9rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+}
+@media screen and (min-width: 1000px){
+    header{
+        block-size: 150px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #header__cont{
+        padding: 10px 0 10px 10%;
+    }
 }

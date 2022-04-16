@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/video.css">
     -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/main.css">
     <title>Videos - Enrique F. Segura | Director de orquesta</title>
     <meta name="description" content="Videos - Enrique Francisco Segura, joven y brillante director argentino. Director de Orquesta">
@@ -16,19 +17,44 @@
 </head>
 <body>
     <header>
-        <div id="header__cont">
-            <h1 class="header__title">Enrique Francisco Segura</h1>
-            <h2 class="header__subtitle">Director de Orquesta</h2>
-        </div>    
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Inicio</a></li>
-                <li><a href="bio.html">Biografía</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="prensa.html">Prensa</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-bar navbar-expand-lg position-relative">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                    <div id="header__cont">
+                        <h1 class="header__title">Enrique Francisco Segura</h1>
+                        <h2 class="header__subtitle">Director de Orquesta</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul
+                            class="navbar-nav me-auto mb-2 mb-lg-0 position-relative bottom-0 start-50 translate-middle-x">
+                            <li class="nav-item text-center"><a class="nav-link" href="../../../index.html">Inicio</a></li>
+                            <li class="nav-item text-center"><a class="nav-link" href="bio.html">Biografía</a></li>
+                            <li class="nav-item text-center"><a class="nav-link" href="galeria.html">Galería</a></li>
+                            <li class="nav-item text-center"><a class="nav-link" href="prensa.html">Prensa</a></li>
+                            <li class="nav-item text-center"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0 position-relative bottom-0 end-0">
+                            <li class="nav-item nav-link dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Language
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark bg-black dropdown-menu-lg-end"
+                                    aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item text-white text-center" href="#">English</a></li>
+                                    <li><a class="dropdown-item text-white text-center" href="#">Français</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 <main>
     <h3 class="video__title">Videos</h3>
@@ -40,5 +66,8 @@
     <p>©2022 Enrique Francisco Segura - All Rights Reserved.</p>
     <p>Created by Sergio N. Niño A.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 </html>
