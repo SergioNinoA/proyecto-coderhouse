@@ -1,3 +1,20 @@
+nav{
+    font-family: 'Vollkorn';
+    align-items: center;    
+    
+}
+
+ul{
+    list-style: none;    
+    font-size: calc(1rem + 0.2vw);
+}
+
+.li{
+    display: inline-block;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
 header{
     color: map-get($map: $m-colors, $key: text);
     background: map-get($map: $m-colors, $key: background);
@@ -23,35 +40,29 @@ header{
         margin-bottom: 10px;
         font-family: 'Vollkorn';
     }
+    &__language{
+        border: 1px map-get($map: $m-colors, $key: text) solid;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        box-sizing: border-box;
+        &:hover{
+            border: 1px map-get($map: $m-colors, $key: title) solid;
+        }
+    }
 }
 
 #header__cont{
     padding: 10px 0 10px 5%;
     font-family: 'Vollkorn';
 }
-nav{
-    font-family: 'Vollkorn';
-    align-items: center;    
-    
-}
 
-ul{
-    list-style: none;    
-    font-size: calc(1rem + 0.2vw);
-}
-
-.li{
-    display: inline-block;
-    padding-left: 1%;
-    padding-right: 1%;
-    
-}
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
     color: map-get($map: $m-colors, $key: title);
 }
 .navbar-dark .navbar-nav .nav-link {
     color: map-get($map: $m-colors, $key: text);
 }
+
 @media screen and (max-width: 350px){
     .header{
         &__title{

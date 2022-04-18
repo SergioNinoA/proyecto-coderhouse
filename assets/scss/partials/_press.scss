@@ -12,3 +12,36 @@
         padding: 5%;
     }
 }
+.card-img-top:hover{
+    cursor: pointer;
+    border: 1px map-get($map: $m-colors, $key: title);    
+}
+@media screen and (max-width: 900px){
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 3.5%;
+    }
+}
+@media screen and (max-width: 600px){
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+}
+@media screen and (max-width: 450px){
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 7%;
+    }
+}
+@media screen and (max-width: 350px){
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+    .press{
+        &__container{
+            padding: 0%;
+        }
+    }       
+}

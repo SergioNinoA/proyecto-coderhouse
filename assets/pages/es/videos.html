@@ -32,7 +32,7 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul
                             class="navbar-nav me-auto mb-2 mb-lg-0 position-relative bottom-0 start-50 translate-middle-x">
-                            <li class="nav-item text-center"><a class="nav-link" href="../../../index.html">Inicio</a></li>
+                            <li class="nav-item text-center"><a class="nav-link" href="index-es.html">Inicio</a></li>
                             <li class="nav-item text-center"><a class="nav-link" href="bio.html">Biografía</a></li>
                             <li class="nav-item text-center"><a class="nav-link" href="galeria.html">Galería</a></li>
                             <li class="nav-item text-center"><a class="nav-link" href="prensa.html">Prensa</a></li>
@@ -40,7 +40,7 @@
                         </ul>
                         <ul class="navbar-nav mb-2 mb-lg-0 position-relative bottom-0 end-0">
                             <li class="nav-item nav-link dropdown">
-                                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                <a class="dropdown-toggle header__language" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Language
                                 </a>
@@ -58,28 +58,30 @@
     </header>
 <main>
     <h3 class="video__title">Videos</h3>
-        <container>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zCjmq_3t-Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </container>
-        <carousel id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="video__container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button> -->
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!--<img src="..." class="d-block w-100" alt="...">--> <container class="d-block w-100"><iframe width="560" height="315" src="https://www.youtube.com/embed/zCjmq_3t-Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></container> 
+                <div class="carousel-item active">                    
+                    <div class="d-block embed-container">
+                        <iframe src="https://www.youtube.com/embed/q2jZKGuLc04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                    
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="d-block embed-container">
+                        <iframe src="https://www.youtube.com/embed/uReAMOk_bm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img src="..." class="d-block w-100" alt="...">
-                </div>
+                </div> -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
@@ -91,7 +93,8 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </carousel>
+        </div>
+    </div>
 </main>
 <footer>
     <p>©2022 Enrique Francisco Segura - All Rights Reserved.</p>

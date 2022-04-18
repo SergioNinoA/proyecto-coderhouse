@@ -25,6 +25,12 @@
         object-fit: cover;
         max-height: 600px;
     }
+    &__item{
+        &:hover{
+            cursor: pointer;
+            border: 5px map-get($map: $m-colors, $key: title);   
+        }
+    }
     
 }
 @media screen and (min-width: 801px){

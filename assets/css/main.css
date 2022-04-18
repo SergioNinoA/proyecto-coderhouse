@@ -36,6 +36,19 @@ a {
   background-blend-mode: soft-light;
   background-color: #292929; }
 
+nav {
+  font-family: 'Vollkorn';
+  align-items: center; }
+
+ul {
+  list-style: none;
+  font-size: calc(1rem + 0.2vw); }
+
+.li {
+  display: inline-block;
+  padding-left: 1%;
+  padding-right: 1%; }
+
 header {
   color: white;
   background: #292929;
@@ -60,22 +73,17 @@ header {
   margin-bottom: 10px;
   font-family: 'Vollkorn'; }
 
+.header__language {
+  border: 1px white solid;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  box-sizing: border-box; }
+  .header__language:hover {
+    border: 1px darkorange solid; }
+
 #header__cont {
   padding: 10px 0 10px 5%;
   font-family: 'Vollkorn'; }
-
-nav {
-  font-family: 'Vollkorn';
-  align-items: center; }
-
-ul {
-  list-style: none;
-  font-size: calc(1rem + 0.2vw); }
-
-.li {
-  display: inline-block;
-  padding-left: 1%;
-  padding-right: 1%; }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: darkorange; }
@@ -370,6 +378,10 @@ textarea {
   object-fit: cover;
   max-height: 600px; }
 
+.galery__item:hover {
+  cursor: pointer;
+  border: 5px darkorange; }
+
 @media screen and (min-width: 801px) {
   .galery__item:nth-child(1) {
     grid-column-start: span 2; }
@@ -493,6 +505,32 @@ textarea {
 .press__container {
   padding: 5%; }
 
+.card-img-top:hover {
+  cursor: pointer;
+  border: 1px darkorange; }
+
+@media screen and (max-width: 900px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3.5%; } }
+
+@media screen and (max-width: 600px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; } }
+
+@media screen and (max-width: 450px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 7%; } }
+
+@media screen and (max-width: 350px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; }
+  .press__container {
+    padding: 0%; } }
+
 .video__title {
   font-family: 'Vollkorn', serif;
   color: darkorange;
@@ -503,4 +541,18 @@ textarea {
   font-size: 36px; }
 
 .video__container {
+  padding: 5% 10%;
   box-sizing: border-box; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
