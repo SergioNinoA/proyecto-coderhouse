@@ -19,7 +19,7 @@
 <!-- Acá va todo el contenido del sitio web-->
 
 <header>
-    <div class="nav-bar navbar-expand-lg position-relative">
+    <container class="nav-bar navbar-expand-lg position-relative">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
                 <div id="header__cont">
@@ -56,11 +56,66 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </container>
 </header>
 <main>
     <h3 class="press__title">Prensa</h3>
-
+    <div class="press__container">
+        <div class="row row-cols-1 row-cols-md-4 g-5">
+            <div class="col">
+                <div class="card text-white bg-dark mb-2 h-100">
+                    <!--<img src="../../img/press/08-12-2021.jpg" class="card-img-top" alt="...">-->
+                    <div>
+                        <img src="../../img/press/08-12-2021.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#img1" alt="">
+                    </div>
+                    <!-- Modal imágen 1 -->
+                    <div tabindex="-1" aria-labelledby="img1" aria-hidden="true" class="modal fade" id="img1">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <img id="1" src="../../img/press/08-12-2021.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                    </div>                    
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark mb-2 h-100">
+                    <img src="../../img/press/28-11-2021.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark mb-2 h-100">
+                    <img src="../../img/press/27-08-2021.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark mb-2 h-100">
+                    <img src="../../img/press/05-2021.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
     <p>©2022 Enrique Francisco Segura - All Rights Reserved.</p>
