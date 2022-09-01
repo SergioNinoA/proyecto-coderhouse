@@ -1,6 +1,6 @@
 # webproject-Coderhouse
 
-<h4>A project to show a professional webside made for an Orchestral Conductor</h3>
+<h4>A project to show a professional website made for an Orchestral Conductor</h3>
 
 
 <h3 align="left">Languages and Tools:</h3>
